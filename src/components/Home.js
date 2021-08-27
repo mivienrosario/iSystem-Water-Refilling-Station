@@ -1,29 +1,25 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import EmployeeList from "./EmployeeList";
 
 
 const Home = () => {
 
-     const [employees, setEmployees] = useState([
-          { first: 'Butch', last: 'Mabunga', id: 1 },
-          { first: 'Jejomar', last: 'De Leon', id: 2 },
-          { first: 'Ruel', last: 'M', id: 3},
-          { first: 'Jonathan', last: 'Jularbal', id: 4 }
-     ]);
+     const [employees, setEmployees] = useState(null);
+
+     useEffect(() => {
+          fetch('http://localhost:8000/employees')
+               .then(res => {
+                    return res.json();
+               })
+               .then(data => {
+                    console.log(data);
+                    setEmployees(data);
+               });
+     }, []);
 
      return ( 
           <div className="home">
-               <table className="table">
-                    <tr>
-                         <th>First Name</th>
-                         <th>Last Name</th>
-                    </tr>
-                    {employees.map((emp) => (
-                         <tr className="emp-preview" key={emp.id}>
-                              <td>{emp.first}</td>
-                              <td>{emp.last}</td>
-                         </tr>
-                    ))}
-               </table>
+               {employees && <EmployeeList employees={employees} />}
                
           </div>
       );

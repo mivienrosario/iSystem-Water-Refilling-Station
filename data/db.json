@@ -1,0 +1,24 @@
+{
+     "employees": [
+          {
+               "first": "Butch",
+               "last": "Mabunga",
+               "id": 1
+          },
+          { 
+               "first": "Jejomar", 
+               "last": "De Leon", 
+               "id": 2 
+          },
+          { 
+               "first": "Ruel", 
+               "last": "M", 
+               "id": 3
+          },
+          { 
+               "first": "Jonathan", 
+               "last": "Jularbal", 
+               "id": 4 
+          }
+     ]
+}
