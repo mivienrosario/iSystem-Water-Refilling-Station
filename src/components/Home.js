@@ -1,28 +1,10 @@
-import { useState, useEffect } from "react";
-import EmployeeList from "./EmployeeList";
-
+import Create from "./Create";
 
 const Home = () => {
-
-     const [employees, setEmployees] = useState(null);
-
-     useEffect(() => {
-          fetch('http://localhost:8000/employees')
-               .then(res => {
-                    return res.json();
-               })
-               .then(data => {
-                    console.log(data);
-                    setEmployees(data);
-               });
-     }, []);
-
-     return ( 
-          <div className="home">
-               {employees && <EmployeeList employees={employees} />}
-               
-          </div>
-      );
+     return (
+          <Create />
+     );
+     
 }
  
 export default Home;
