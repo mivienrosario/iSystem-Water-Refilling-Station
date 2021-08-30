@@ -20,5 +20,32 @@
                "last": "Ju", 
                "id": 4 
           }
+     ],
+     "customers": [
+          {
+               "name": "La Union Cultural Institute",
+               "city": "San Fernando",
+               "rate": 25.00,
+               "id": "cust0001"
+          },
+          {
+               "name": "Marand Beach",
+               "city": "Bauang",
+               "rate": 25.00,
+               "id": "cust0002"
+          },
+          {
+               "name": "Go Resort",
+               "city": "Bauang",
+               "rate": 20.00,
+               "id": "cust0003"
+          }
+     ],
+     "products": [
+          {
+               "name": "5 Gal",
+               "description": "5 gallons purified drinking water",
+               "price": 25.00
+          }
      ]
 }

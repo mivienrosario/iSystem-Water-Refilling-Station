@@ -10,7 +10,7 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 600px;
+  max-width: 75%;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
 }
@@ -29,7 +29,7 @@
   color: #63CAF2;
 }
 .content {
-  max-width: 600px;
+  max-width: 75%;
   margin: 40px auto;
   padding: 20px;
 }
@@ -41,7 +41,7 @@
 .emp-preview {
   padding: 10px 16px;
   margin: 20px 0;
-  height: 150px;
+  min-height: 150px;
   border-bottom: 2px solid #f0eeee;
 }
 
@@ -53,4 +53,20 @@
   font-size: 20px;
   color: #63CAF2;
   margin-bottom: 8px;
+}
+
+.profile-container {
+}
+
+.img-container {
+  height: 100px;
+  width: 100px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
 }

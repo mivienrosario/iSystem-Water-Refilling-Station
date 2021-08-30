@@ -1,8 +1,9 @@
-import Create from "./Create";
 
 const Home = () => {
      return (
-          <Create />
+          <div>
+               <h1>Hello Home</h1>
+          </div>
      );
      
 }
