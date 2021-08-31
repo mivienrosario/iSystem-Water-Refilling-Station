@@ -55,9 +55,6 @@
   margin-bottom: 8px;
 }
 
-.profile-container {
-}
-
 .img-container {
   height: 100px;
   width: 100px;
@@ -69,4 +66,8 @@
 
 .flex-column {
   flex-direction: column;
+}
+
+.flex-row {
+  flex: row;
 }

@@ -11,12 +11,12 @@ const EmployeeList = ({ employees }) => {
                                    <img src={pic} alt="" />
                               </div>
 
-                              <div className="flex"> {/* second container */}
+                              <div className="flex flex-column"> {/* second container */}
                                    <div> {/* first inner container */}
                                         <h2>{emp.last}, {emp.first}</h2>
                                    </div>
 
-                                   <div> {/* second inner container */}
+                                   <div className="flex"> {/* second inner container */}
                                         <div>
                                              <ul>
                                                   <li>Gender</li>
