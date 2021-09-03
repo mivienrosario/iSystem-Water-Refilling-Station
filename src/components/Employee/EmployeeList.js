@@ -1,4 +1,5 @@
-import pic from '../img/Employee/sample.png';
+import pic from '../../img/Employee/sample.png';
+import Button from '../Button';
 
 const EmployeeList = ({ employees }) => {
      return (
@@ -8,7 +9,11 @@ const EmployeeList = ({ employees }) => {
                          
                          <div className="profile-container flex">
                               <div> {/* first container */}
-                                   <img src={pic} alt="" />
+                                   <img src={pic} alt="" className="img-100" />
+                              </div>
+
+                              <div>
+                                   <Button children="edit" />
                               </div>
 
                               <div className="flex flex-column"> {/* second container */}
@@ -16,7 +21,7 @@ const EmployeeList = ({ employees }) => {
                                         <h2>{emp.last}, {emp.first}</h2>
                                    </div>
 
-                                   <div className="flex"> {/* second inner container */}
+                                   <div className="flex no-bullet"> {/* second inner container */}
                                         <div>
                                              <ul>
                                                   <li>Gender</li>

@@ -46,6 +46,11 @@
                "name": "5 Gal",
                "description": "5 gallons purified drinking water",
                "price": 25.00
+          },
+          {
+               "name": "350ml",
+               "description": "350ml purified drinking water",
+               "price": 7.50
           }
      ]
 }

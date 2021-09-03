@@ -6,6 +6,25 @@
   font-family: "Quicksand";
   color: #333;
 }
+
+form input {
+  color: #333;
+  border-radius: 3px;
+  box-shadow: 0 0 3px 1px rgba(0,0,0,0.03);
+  height: 30px;
+}
+
+form {
+  margin-left: 15px;
+}
+
+button {
+  width: 100%;
+  height: 2rem;
+  border: 0;
+  border-radius: 5px;
+}
+
 .navbar {
   padding: 20px;
   display: flex;
@@ -55,7 +74,7 @@
   margin-bottom: 8px;
 }
 
-.img-container {
+.img-100 {
   height: 100px;
   width: 100px;
 }
@@ -70,4 +89,21 @@
 
 .flex-row {
   flex: row;
+}
+
+.no-bullet ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.no-border input, select {
+  border: 0;
+}
+
+.mg-tb-8 input, label, select {
+  margin: 8px 0;
+}
+
+.green {
+  color: #9CCC2D;
 }
